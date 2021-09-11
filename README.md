@@ -29,9 +29,9 @@
 
 1. Run `truffle develop` to start the local blockchain and enter the truffle console
 
-1. Run `truffle migrate --network development` to compile and deploy your contract onto your local blockchain
+1. In another shell, run `truffle migrate --network development` to compile and deploy your contract onto your local blockchain. **Note:** This _has_ to be done after the local blockchain is already running
 
-1. Do something like `let instance = await WriteAndRead.deployed()`
+1. From within the truffle console, do something like `let instance = await WriteAndRead.deployed()`
 
 1. Run one of your contract's transactions with something like
 `instance.writeUint(1234)`
