@@ -2,6 +2,8 @@
 
 ## Running a Solidity Contract on Truffle
 
+### If starting from scratch
+
 1. Install truffle: `npm install -g truffle`
 
 1. Create a new truffle project
@@ -15,12 +17,16 @@
 
 1. Add a new migration file for deployment at `./migrations/2_deploy_contracts.js`:
 
-	```
+	```js
 	var WriteAndRead = artifacts.require("WriteAndRead");
+
 	module.exports = function(deployer) {
 		deployer.deploy(WriteAndRead);
 	};
 	```
+
+### After doing the above, or if you've just cloned this repo and installed
+truffle
 
 1. Run `truffle develop` to start the local blockchain and enter the truffle console
 
