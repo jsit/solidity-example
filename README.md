@@ -25,8 +25,7 @@
 	};
 	```
 
-### After doing the above, or if you've just cloned this repo and installed
-truffle
+### After doing the above, or if you've just cloned this repo and installed truffle
 
 1. Run `truffle develop` to start the local blockchain and enter the truffle console
 
